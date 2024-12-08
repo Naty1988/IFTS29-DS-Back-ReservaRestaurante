@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        h1= title
+        a(href="http://localhost:3000/")  Volver
+        form(action="/update" method="put")
+            label Nombre del cliente: 
+            input(name="clientName")
+            br 
+            label Fecha de reserva: 
+            input(name="date") 
+            br
+            label Hora de reserva:  
+            input(name="hour")
+            br
+            label Mesa: 
+            input(name="table")
+            br 
+            label Estado: 
+            input(name="status")
+            br
+            label Notas:  
+            input(name="notes")
+            br
+            label Reservado por:  
+            input(name="reservedBy")
+            br
+            button(type="submit") Actualizar    
